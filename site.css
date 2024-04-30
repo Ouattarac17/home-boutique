@@ -1,0 +1,346 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto condensed',sans-serif;
+}
+body{
+    height: 100%;
+    background-color: white;
+    
+}
+.star{
+ color: gray;
+ display: inline-block;
+ font-size: 24px;
+cursor: pointer;
+    }
+.star.active{
+color: gold;
+    }
+
+.diminuer{
+    text-decoration: line-through;
+}
+.pourcent{
+    color: white;
+    font-weight: bold;
+    background-color: red;
+}
+.pourcent{
+    animation: wiggle 2s linear infinite;
+  }
+  @keyframes wiggle{ 
+  0%, 7%{
+    transform:rotateZ(0);
+  }
+  30%{
+    transform:rotateZ(6deg);
+  }
+  15%{
+    transform:rotate(-15deg);
+  }
+  20%{
+    transform: rotate(10deg);
+  }
+  25%{
+    transform:rotate(-10deg) ;
+  }
+  30%{
+    transform:rotate(6deg);
+  }
+  35%{
+    transform:rotateZ(-4deg);
+  }
+  40%, 100%{
+    transform:rotateZ(0deg);
+  }
+  section{
+    width: 100px;
+  }
+  }
+  
+  .pourcent{
+    background: orangered;
+    transform-origin: 50% 5em;
+    margin-top: 30px;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+  }
+  .rouge{
+    background: red;
+    color: white;
+  }
+.navbar{
+    padding: 10px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0%;
+    z-index: 999;
+    background-color:white;
+    box-shadow: 0 10px 20px rgba(115, 25, 25, 0.3);
+    transition: all 0.2s;
+}
+/* CE CI EST MA BARE DE RECHERCHE*/
+.recherche{
+    border-radius: 10px;
+    height: 30px;
+    width: 40%;
+}
+.navbar .logo h1{
+    color: black;
+    cursor: pointer;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    margin-left:20px;
+    color: white;
+    
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* CE CI EST MA SECTION EN ORANGE*/
+.content{
+    background-color: orange;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 50vh;
+}
+   
+.content h1{
+font-size: 20px;
+}
+.content p{
+    font-size: 20px;
+    margin-top: 20px;
+}   
+#cartCount{
+    color: red;
+}
+
+/* CECI EST MON BOUTON AJOUTER AU PANIER*/
+.content button{
+    margin-top: 30px;
+    padding: 15px;
+    background: #f63e4e;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* CECI EST LE TEXTE DE HOME BOUTIQUE*/
+.produit_texte{
+    text-align: left;
+    font-size: 30px;
+    font-weight: 300;
+    margin-top: 30px;
+    margin-left: 80px;
+    color: #424144;
+}
+.section_produit{
+    padding: 40px 5%;
+}
+.produits{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, mimax(320px, 1fr));
+}
+.produits .carte{
+    width: 260px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(115, 25, 25, 0.3);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    border: none;
+}
+
+
+.produits .carte img{
+    height: 250px;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.produits .carte .description{
+    padding: 5px 20px;
+    opacity: 0.8;
+    
+}
+.produits .carte .titre{
+    font-weight: 900;
+    font-size: 20px;
+    color: #424144;
+    padding: 0 20px;
+}
+
+.produits, .carte .box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.produits .carte .prix{
+    color: #f63e4e;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.produits .carte .achat{
+    font-size: 10px;
+    font-weight: 900;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 1px solid #f63e4e;
+    background-color: orangered;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.5s;
+}
+
+.produits .carte .box .achat:hover{
+    cursor: pointer;
+    background: black;
+    color: white;
+   
+}
+
+/* CECI EST LE PIED DE MA PAGE*/
+footer{
+    background: #253041;
+    height: 86vh;
+    color: white;
+}
+footer  a{
+    text-align: none;
+    color: #f63e4e;
+    font-weight: bold;
+  }
+.propos{
+    margin-left: 150px;
+    padding-top: 50px;
+}
+.bout{
+    font-style: oblique;
+    font-size: 20pxpx;
+}
+.propos .test{
+    font-size: 16px;
+    font-style: italic;
+}
+.millieu{
+    text-align: center;
+    margin-top: -210px;
+    margin-left: 50px;
+    }
+.class{
+    font-size: 20px;
+    font-weight: 999;
+    font-style: oblique;
+}
+label #btn{
+    background: black;
+}
+.center{
+    font-size: 16px;
+    font-style: italic;
+}
+.vente{
+    text-align: right;
+    margin-top: -320px;
+    margin-right: 90px;
+    
+}
+.creat{
+    text-align: center;
+    margin-top: 200px;
+    background-color:#1b2330 ;
+    height: 3em;
+    font-style: italic;
+}
+.vendre{
+    font-style: oblique;
+    font-weight: 999;
+}
+.home{
+    font-style: italic;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* page chaussure */
+.chaussure{
+background-image: url('images/ball.png');
+background-size: cover;
+background-repeat: no-repeat;
+padding: 0 5%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+color: #424144;
+height: 100vh;
+margin: 0.4%;
+}
+/* PAGE ORDINATEU*/
+.ordinateur{
+    background-image: url('images/2_338b32fe-9c26-4228-9bcf-08b868fb9f09.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100vh;
+    margin: 0.4%;
+    }
+    /* PAGE TELEPHONE*/
+.telephone{
+    background-image: url('images/apple-iphone-4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #424144;
+    height: 100vh;
+    margin: 0.4%;
+    }
+
+ .sac{
+        background-image: url('images/1708380909936.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 0 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        color: #424144;
+        height: 100vh;
+        margin: 0.4%;
+        }
+a 
+{
+ text-decoration: none; 
+}
+
+
+
